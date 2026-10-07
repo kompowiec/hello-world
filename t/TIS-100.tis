@@ -1,0 +1,25 @@
+# Draw vertical left bar of 'H'
+MOV 0, LEFT    # X = 0
+MOV 0, LEFT    # Y = 0
+MOV 3, LEFT    # Color = White (3)
+MOV 3, LEFT    # Color = White (3)
+MOV 3, LEFT    # Color = White (3)
+MOV -1, LEFT   # Terminate command sequence
+
+# Draw horizontal crossbar of 'H'
+MOV 0, LEFT    # X = 0
+MOV 1, LEFT    # Y = 1
+MOV 3, LEFT    # Color = White (3)
+MOV 3, LEFT    # Color = White (3)
+MOV -1, LEFT   # Terminate command sequence
+
+# Draw vertical right bar of 'H'
+MOV 2, LEFT    # X = 2
+MOV 0, LEFT    # Y = 0
+MOV 3, LEFT    # Color = White (3)
+MOV 3, LEFT    # Color = White (3)
+MOV 3, LEFT    # Color = White (3)
+MOV -1, LEFT   # Terminate command sequence
+
+HALT:
+JRO 0          # Halt node
